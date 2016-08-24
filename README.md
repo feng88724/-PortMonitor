@@ -10,7 +10,9 @@
 123.125.114.112 5432
 ```
 
-3、创建cron，定时执行
+3、修改Smtp邮箱服务器配置信息，包括：HOST、USER、PASSWORD；修改收件人列表；
+
+4、创建cron，定时执行
 
 ```
 01 * * * * cd /xxx/monitor && /usr/bin/python port_monitor.py >> /tmp/port_monitor.log 2>&1
